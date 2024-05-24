@@ -1,11 +1,23 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: #000000;
   height: 100vh;
   display: flex;
+  background-color:#000000;
+  color: #000000;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
   align-items: center;
   justify-content: center;
+  z-index: 99;
+}
+
+#particles-js{
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
 .fantasma{
@@ -16,6 +28,7 @@ body{
   position: relative;
   cursor: pointer;
   animation: floating 2s infinite ease-in-out;
+  z-index: 98;
 }
 
 @keyframes floating{
@@ -104,7 +117,9 @@ body{
 .pies span:first-child{
   border-radius: 0 0 20px 12spx;
 }
-
+  /* Made by mangofuhrer © */
 .pies span:last-child{
   border-radius: 0 0 12px 20px;
 }
+
+
